@@ -47,6 +47,12 @@
         #barcode {
             margin-top: 20px;
         }
+        .thanks {
+            width: 100%;
+            text-align: right;
+            font-size: 0.7em;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -68,9 +74,12 @@
                 <label for="day">誕生日:</label>
                 <input type="number" id="day" name="day" min="1" max="31">
             </div>
-            <input id="generateButton" type="submit" value="バーコード生成">
+            <input id="generateButton" type="submit" value="バーコード生成 (EAN-13)">
         </form>
-</div>
+        <div class="thanks">
+        Use <a href="https://lindell.me/JsBarcode/">JsBarcode (License: MIT)</a>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/barcodes/JsBarcode.ean-upc.min.js"></script>
     <script src="script.js"></script>
 </body>
